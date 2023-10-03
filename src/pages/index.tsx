@@ -11,7 +11,7 @@ export default function Home() {
             <div className='bg-background h-screen flex flex-col justify-center overflow-clip select-none'>
                 <CursorFollow />
                 <div className='flex flex-row justify-between p-3 h-[6vh] border-primary sticky top-0 left-0'></div>
-                    <div className='flex flex-col md:flex-row flex-grow justify-between md:justify-between items-center w-full z-10 container'>
+                    <div className='flex flex-col md:flex-row flex-grow justify-between items-center w-full z-10 container'>
                         <div className='text-5xl'>
                         <h1 className='text-text'>Lex</h1>
                         <h1 className='text-primary'>Wuestenenk</h1>

@@ -29,13 +29,15 @@ export default function Projects() {
                         <h1 className='md:text-primary'>Projects</h1>
                     </div>
                     <div className='md:w-2/4 flex flex-col gap-3 overflow-auto px-5'>
-                        <div className='p-3 border-primary border-2 rounded-lg mb-3 hover:bg-primary ease-in duration-300'>
-                            <div className='flex flex-row justify-between items-center'>
-                                <h2 className='text-2xl text-text'>Portfolio</h2>
-                                <Icons.Link className="text-xl text-text" />
+                        <Link href="https://lexwuestenenk.nl/">
+                            <div className='p-3 border-primary border-2 rounded-lg mb-3 hover:bg-primary ease-in duration-300'>
+                                <div className='flex flex-row justify-between items-center'>
+                                    <h2 className='text-2xl text-text'>Portfolio</h2>
+                                    <Icons.Link className="text-xl text-text" />
+                                </div>
+                                <p className='text-text'>The project you are looking at right now.</p>
                             </div>
-                            <p className='text-text'>The project you are looking at right now.</p>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div> 
