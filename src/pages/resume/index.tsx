@@ -1,15 +1,8 @@
-import type { Metadata } from 'next'
 import { CursorFollow } from '@/components/sfx/cursor-follow';
 import { Icons } from '@/components/Icons';
 import { Button } from '@/components/ui/button';
-import { SocialsBar } from '@/components/ui/socials-bar';
 import Link from 'next/link';
 import Head from 'next/head';
-
-export const metadata: Metadata = {
-    title: 'Lex Wuestenenk',
-    description: 'All projects I have been working on.',
-}
 
 export default function Projects() {
     return (
@@ -27,7 +20,7 @@ export default function Projects() {
                     </Button>
                     <div className='flex flex-row'>
                         <h1 className='md:text-transparent text-center text-text align-right flex items-center text-3xl'>My</h1>
-                        <h1 className='md:text-transparent text-center text-primary align-right flex items-center text-3xl pr-3'>&nbsp;Projects</h1>
+                        <h1 className='md:text-transparent text-center text-primary align-right flex items-center text-3xl pr-3'>&nbsp;Resume</h1>
                     </div>
                 </div>
                 <div className='flex grow md:flex-row flex-col justify-between z-10 container h-[82vh]'>
@@ -38,7 +31,6 @@ export default function Projects() {
                     <div className='md:w-2/4 flex flex-col gap-3 overflow-scroll px-5'>
                     </div>
                 </div>
-                <SocialsBar />
             </div> 
         </>
     )
