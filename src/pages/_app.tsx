@@ -3,8 +3,9 @@ import type { AppProps } from 'next/app'
 
 import "../styles/globals.css";
 import { useRouter } from "next/router";
+import { SessionProvider } from "next-auth/react";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   const router = useRouter();
   return (
     <AnimatePresence mode="wait">
@@ -32,7 +33,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
         className="base-page-size"
       >
-        <Component {...pageProps} />
+        <SessionProvider session={pageProps.session}>
+          <Component {...pageProps} />
+        </SessionProvider>
       </motion.div>
     </AnimatePresence>
   );
