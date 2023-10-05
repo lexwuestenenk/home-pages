@@ -42,7 +42,7 @@ export default function Projects() {
                             />
                             <SeperationBar />
                             <ResumeItem 
-                                period={"09/2020 - 05-2023"} 
+                                period={"09/2020 - 05/2023"} 
                                 school={"ROC Aventus"} 
                                 study={"Software Development - MBO Niveau 4"}
                             />
